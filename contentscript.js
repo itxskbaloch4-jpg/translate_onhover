@@ -102,7 +102,7 @@ function showPopup(e, content) {
         $(this.shadowRoot.querySelector('main')).fadeIn('fast')
       })
   })
-  $popup.attr({content, options: JSON.stringify(options)})
+  $popup.attr({content: JSON.stringify(content), options: JSON.stringify(options)})
 }
 
 function calculatePopupPosition(textRect, $popup) {
